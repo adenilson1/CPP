@@ -1,0 +1,28 @@
+// uma funcao chamando ela mesma.
+#include <iostream>
+using namespace std;
+// exemplo recurvidade =  fatorial -> 6! = 6 * 5 * 4 * 3 * 2 * 1 
+
+int factorial (int n){
+   /*/ int total = 1;
+    for (int i  = 1; i <= n; i++){
+        total *= i;
+
+    }    
+    return total;*/
+    if ( n <= 0 ) return -1;
+    if ( n == 1) return 1;
+
+    return n * factorial(n - 1);
+}
+
+int main() {
+    cout << factorial(0) << endl;
+    cout << factorial(1) << endl;
+    cout << factorial(3) << endl;
+    cout << factorial(4) << endl;
+    cout << factorial(5) << endl;
+    cout << factorial(6) << endl;
+    cout << factorial(-6) << endl;
+    return 0;
+}

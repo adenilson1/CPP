@@ -1,0 +1,1 @@
+g++ -o dist/app.exe src/functions/*.cpp src/*.cpp

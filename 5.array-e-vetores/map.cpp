@@ -16,6 +16,9 @@ vector<int> map(vector<int> v, mapfn fn){  // funcao que transforma cada element
 }
 
 int main() {
+
+    //vetor 
+    vector<int> nums = {2, 5, 8, 23, 56};
     
     //funcao quadrada
     auto square = [](int x) {return x * x;};
@@ -24,7 +27,7 @@ int main() {
     auto triple= [](int x) {return 3 * x;};
 
 
-    vector<int> nums = {2, 5, 8, 23, 56};
+
     //vector<int> squares;
 
 //usando a funcao map
